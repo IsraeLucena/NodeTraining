@@ -1,6 +1,19 @@
 const fs = require('fs')
+const yargs = require('yargs')
 
-fs.writeFile(process.argv[2], process.argv[3], (error) => {
+const argv = yargs
+    .alias('f', 'filename')
+    .alias('c', 'content')
+    .demandOption('filename')
+    .demandOption('content')
+    .argv
+
+
+fs.writeFile(argv.filename, argv.content, (error) => {
     if (error) throw error
-    console.log(`Archive ${process.argv[2]} was salved successfully!`)
+    console.log(`Archive ${argv.filename} was salved successfully!`)
 })
+
+/*
+Execute node save-file.js -f=name.txt -c="content into file"
+*/
