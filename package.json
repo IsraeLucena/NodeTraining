@@ -18,6 +18,11 @@
   },
   "homepage": "https://github.com/IsraeLucena/NodeTraining#readme",
   "dependencies": {
+    "typescript": "^2.9.2",
     "yargs": "^11.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^10.5.1",
+    "typescript-tools": "^0.3.1"
   }
 }
