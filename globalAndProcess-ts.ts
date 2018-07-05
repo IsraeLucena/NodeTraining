@@ -14,5 +14,10 @@ console.log(`The factorial of ${num} is equals to ${factorial(num)}`)
 console.log('Modules search preview' + module.paths)
 
 /*
-Execute node globalAndProcess.js --num=8
+Execute "node globalAndProcess.js --num=8"
+
+Execute with debug "node --inspect globalAndProcess.js --num=8"
+
+Execute with debug break "node --inspect-brk globalAndProcess.js --num=8"
+
 */
